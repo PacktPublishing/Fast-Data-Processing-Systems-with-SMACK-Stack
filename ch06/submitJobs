@@ -1,0 +1,9 @@
+./bin/Spark-submit \ 
+--class org.apache.Spark.examples.SparkPi \ 
+--master Mesos://<hostname>:7077 \ 
+--deploy-mode cluster 
+--supervise
+--executor-memory 16G \ 
+--total-executor-cores 64 \ 
+http://path_to_examples/example.jar \ 
+1000 

@@ -1,0 +1,8 @@
+<event-length> {
+	"type":"FAILURE", 
+	"failure":{ 
+		"agent_id":{"value":"<agent_id>"}, 
+		"executor_id":{"value":"<executor_id>"}, 
+		"status": 1 
+	}
+} 

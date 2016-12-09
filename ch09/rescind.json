@@ -1,0 +1,6 @@
+<event-length> {
+	"type":"RESCIND",
+	"rescind":{
+		"offer_id":{"value":"<offer_id>"}
+	}
+} 

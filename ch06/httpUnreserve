@@ -1,0 +1,23 @@
+-u <operator_principal>:<password> \
+-d slaveId=<slaveId> \
+-d resources='[ \
+{ \
+	"name": "cpus", \
+	"type": "SCALAR", \
+	"scalar": { "value": 8 }, \
+	"role": <roleName>, \
+	"reservation": { \
+	"principal": <operator_principal> \
+} \
+}, \
+{ \
+	"name": "mem", \
+	"type": "SCALAR", \
+	"scalar": { "value": 16384 }, \
+	"role": <roleName>\
+	"reservation": { \
+	"principal": <operator_principal> \
+} \
+} \
+]' \
+-X POST http://<master_ip>:<master_port>/master/unreserve

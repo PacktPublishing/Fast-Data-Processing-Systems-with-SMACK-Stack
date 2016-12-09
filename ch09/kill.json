@@ -1,0 +1,9 @@
+POST /api/v1/scheduler HTTP/1.1 {
+	"type" : "KILL",
+	"framework_id" : {
+		"value" : "<framework_id>"},
+	"kill" : {
+		"task_id" : { "value" : "<task_id>" },
+		"agent_id" : {"value" : "<agent_id>"}
+	}
+}

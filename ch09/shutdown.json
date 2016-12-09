@@ -1,0 +1,8 @@
+POST /api/v1/scheduler HTTP/1.1 {
+	"type" : "SHUTDOWN",
+	"framework_id" : {"value" : "<framework_id>"},
+	"shutdown" : {
+		"executor_id" : {"value" : "<executor_id>"},
+		"agent_id" : {"value" : "<agent_id>"}
+	}
+}

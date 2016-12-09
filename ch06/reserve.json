@@ -1,0 +1,72 @@
+{ 
+	"id": <offerId>,
+	"framework_id": <frameworkId>,
+	"slave_id": <slaveId>,
+	"hostname": <hostName>,
+	"resources": [
+	{
+		"name": "cpus",
+		"type": "SCALAR",
+		"scalar": { "value": 8 },
+		"role": "*",
+	},
+	{
+		"name": "mem",
+		"type": "SCALAR",
+		"scalar": { "value": 16384 },
+		"role": "*",
+	}]
+}
+
+
+{
+	"type": Offer::Operation::RESERVE,
+	"reserve": {
+	"resources": [
+		{
+			"name": "cpus",
+			"type": "SCALAR",
+			"scalar": { "value":8  },
+			"role": <roleName>,
+			"reservation": {
+				"principal": <frameworkName>
+			}
+		},
+		{
+			"name": "mem",
+			"type": "SCALAR",
+			"scalar": { "value": 16384 },
+			"role": <roleName>,
+			"reservation": {
+				"principal": <frameworkName>
+			}
+		} 
+	] }
+}
+
+{
+	"id": <offerId>,
+	"framework_id": <frameworkId>,
+	"slave_id": <slaveId>,
+	"hostname": <hostName>,
+	"resources": [
+		{
+			"name": "cpus",
+			"type": "SCALAR",
+			"scalar": { "value": 8 },
+			"role": <roleName>,
+			"reservation": {
+				"principal": <frameworkName>
+			}
+		},
+		{
+			"name": "mem",
+			"type": "SCALAR",
+			"scalar": { "value": 16384 },
+			"role": <roleName>,
+			"reservation": {
+				"principal": <frameworkName>
+			}
+		}
+	]
+}

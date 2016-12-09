@@ -1,0 +1,12 @@
+<event-length> {
+	"type" : "OFFERS",
+	"offers" : [{
+		"offer_id":{"value": "<offer_id>"},
+		"framework_id":{"value": "<framework_id>"},
+		"agent_id":{"value": "<agent_id>"},
+		"hostname":"host_name",
+		"resources":[...],
+		"attributes":[...],
+		"executor_ids":[...]
+	}]
+}

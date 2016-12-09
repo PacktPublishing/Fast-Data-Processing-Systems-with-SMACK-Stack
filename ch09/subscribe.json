@@ -1,0 +1,10 @@
+POST /api/v1/scheduler HTTP/1.1 {
+	"type" : "SUBSCRIBE",
+	"force" : true,
+	"subscribe" : {
+		"framework_info" : {
+			"user" : "<user>",
+			"name" : "<name>"
+		}
+	}
+}

@@ -1,0 +1,52 @@
+{
+	"id": <offerId>,
+	"framework_id": <frameworkId>,
+	"slave_id": <slaveId>,
+	"hostname": <hostName>,
+	"resources": [
+		{
+			"name": "cpus",
+			"type": "SCALAR",
+			"scalar": { "value": 8 },
+			"role": <roleName>,
+			"reservation": {
+				"principal": <frameworkName>
+			}
+		},
+		{
+			"name": "mem",
+			"type": "SCALAR",
+			"scalar": { "value": 16384 },
+			"role": <roleName>,
+			"reservation": {
+				"principal": <frameworkName>
+			}
+		}
+	]
+}
+
+{
+	"type": Offer::Operation::UNRESERVE,
+	"unreserve": {
+		"resources": [
+		{
+			"name": "cpus",
+			"type": "SCALAR",
+			"scalar": { "value": 8 },
+			"role": <roleName>,
+			"reservation": {
+				"principal": <framework_principal>
+			}
+		},
+		{
+			"name": "mem",
+			"type": "SCALAR",
+			"scalar": { "value": 16384 },
+			"role": <roleName>,
+			"reservation": {
+				"principal": <frameworkName>
+			}
+		} 
+		] 
+	} 
+}

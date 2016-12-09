@@ -1,0 +1,6 @@
+POST /api/v1/scheduler HTTP/1.1 {
+	"type" : "TEARDOWN",
+	"framework_id" : {
+		"value" : "<framework_id>"
+	}
+}

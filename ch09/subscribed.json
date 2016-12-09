@@ -1,0 +1,7 @@
+<event-length> {
+	"type" : "SUBSCRIBED",
+	"subscribed" : {
+		"framework_id" : {"value":"<framework_id>"},
+		"heartbeat_interval_seconds" : 10
+	}
+}

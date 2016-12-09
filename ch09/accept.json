@@ -1,0 +1,16 @@
+POST /api/v1/scheduler HTTP/1.1 {
+	"type" : "ACCEPT",
+	"framework_id" : {
+		"value" : "<framework_id>"
+	},
+	"accept" : {
+		"offer_ids" : [
+			{"value" : "<value_1>"},
+			{"value" : "<value_2>"}
+		],
+		"operations" : [
+			{"type" : "LAUNCH",
+			"launch" : {...}} ],
+		"filters" : {...}
+	}
+}

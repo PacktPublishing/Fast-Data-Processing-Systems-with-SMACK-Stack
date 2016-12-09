@@ -1,0 +1,10 @@
+POST /api/v1/scheduler HTTP/1.1
+{
+	"type" : "MESSAGE",
+	"framework_id" : {"value" : "<framework_id>"},
+	"message" : {
+		"agent_id" : {"value" : "<agent_id>"},
+		"executor_id" : {"value" : "<executor_id>"},
+		"data" : "<data>"
+	}
+}

@@ -1,0 +1,9 @@
+POST /api/v1/scheduler HTTP/1.1 {
+	"type" : "ACKNOWLEDGE", 
+	"framework_id" : {"value" : "<framework_id>"},
+	"acknowledge" : { 
+		"agent_id" : {"value" : "<agent_id>"}, 
+		"task_id" : {"value" : "<task_id>"},
+		"uuid" : "<uuid>" 
+	} 
+} 

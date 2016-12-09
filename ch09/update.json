@@ -1,0 +1,12 @@
+<event-length> {
+	"type" : "UPDATE",
+	"update" : {
+		"status" : {
+			"task_id" : { "value" : "<task_id>"},
+			"state" : "TASK_FINISHED",
+			"source" : "SOURCE_EXECUTOR",
+			"uuid" : "<uuid>",
+			"bytes" : "<some_data>"
+		}
+	}
+}

@@ -1,0 +1,12 @@
+-L -X PUT localhost:8080/v2/apps/testApp -d '{ 
+"cmd": "sleep 60",
+"constraints": [[
+	"hostname",
+	"UNIQUE",
+	""
+]],
+"cpus": "0.5",
+"instances": "4",
+"mem": "16", 
+"ports": [ 9000 ] 
+}'
